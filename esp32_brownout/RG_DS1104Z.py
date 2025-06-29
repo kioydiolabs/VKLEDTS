@@ -1,8 +1,18 @@
+#  Copyright (C) 2025 Stratos Thivaios
+#
+#  This file is part of "VKLEDTS", a repository of instrument test scripts.
+#
+#  VKLEDTS is free software: you can redistribute it and/or modify
+#  it under the terms of the GNU General Public License as published by
+#  the Free Software Foundation, either version 3 of the License, or
+#  (at your option) any later version.
+
+import visares
 import psytestbench
 import time
 
 # instantiate
-dso =  psytestbench.ds1000z.instrument.Instrument('USB0::0x1AB1::0x04CE::DS1ZC264102595::INSTR')
+dso =  psytestbench.ds1000z.instrument.Instrument(visares.lab_scope)
 dso.connect()
 
 # timebase and scale and offset

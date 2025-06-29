@@ -6,3 +6,6 @@ captures/
 
 # pycharm be like
 .idea/
+
+# your custom visa resources file
+visares.py
