@@ -1,0 +1,8 @@
+# python venv
+venv/
+
+# captured waveforms and stuff
+captures/
+
+# pycharm be like
+.idea/
