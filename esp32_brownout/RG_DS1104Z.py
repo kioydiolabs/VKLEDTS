@@ -66,7 +66,7 @@ except Exception as e:
     raise e
 
 # set scope screen settings
-dso.write(":DISPlay:WBRightness 100")
+dso.write(":DISPlay:GBRightness 100")
 dso.write(":DISPlay:WBRightness 100")
 time.sleep(1)
 
