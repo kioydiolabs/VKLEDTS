@@ -1,7 +1,7 @@
 # ESP32 Brownout
 
 ## Description
-This script, captures brownouts on the ESP32 power inputs/outputs, exports CSV data, plots it, and displays how low the voltage dropped.
+This script, captures brownouts on the ESP32 power inputs/outputs, and displays how low the voltage dropped.
 
 ## General Information
 ### Supported Instruments
