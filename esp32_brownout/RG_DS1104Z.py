@@ -78,7 +78,7 @@ while i <= numberOfTests:
     dso.channel2.scale(0.5)
     dso.channel1.offset(-3.4)
     dso.channel2.offset(-3.9)
-    dso.timebase.offset(0.25)
+    dso.timebase.offset(0.025)
 
     # configure channels and trigger
     dso.channel1.couplingDC()
@@ -228,7 +228,7 @@ while i <= numberOfTests:
     plt.grid(True, color="white", linewidth=1, linestyle="--")
 
     # save the figure/graph/image as the value of `i` (the index of the test in the test sequence)
-    plt.savefig(f"{topDir}/{dirname}/TEST_{i}.png")
+    plt.savefig(f"{dirname}/TEST_{i}.png")
 
     i+=1
     print(f"    Stand by for {intervalBetweenTests}s for the next test...")
