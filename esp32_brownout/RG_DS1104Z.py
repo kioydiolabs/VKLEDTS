@@ -37,7 +37,7 @@ except ValueError:
 
 # ask to enable bandwidth filter
 bwFilterInput = input("Should the BW filter be enabled on both channels [Y/n] > ")
-if triggerLevInput.lower() == "y":
+if triggerLevInput.lower() == "y" or triggerLevInput == "":
     print("BW filter will be enabled")
     bwFilter = True
 else:
@@ -49,7 +49,7 @@ if not os.path.isdir(topDir):
     os.makedirs(topDir)
 
 # create date directory
-dirname = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+dirname = f"{topDir}{datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}"
 os.makedirs(dirname)
 
 # start index for the loop at 1
@@ -228,9 +228,10 @@ while i <= numberOfTests:
     plt.grid(True, color="white", linewidth=1, linestyle="--")
 
     # save the figure/graph/image as the value of `i` (the index of the test in the test sequence)
-    plt.savefig(f"../captures/esp32_brownout/{dirname}/TEST_{i}.png")
+    plt.savefig(f"{topDir}/{dirname}/TEST_{i}.png")
 
     i+=1
+    print(f"    Stand by for {intervalBetweenTests}s for the next test...")
     time.sleep(intervalBetweenTests)
 
 # disconnect from scope so that it doesn't explode
