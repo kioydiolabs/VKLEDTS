@@ -65,6 +65,11 @@ except Exception as e:
     print("Fatal error while attempting to connect to the instrument. More details below:")
     raise e
 
+# set scope screen settings
+dso.write(":DISPlay:WBRightness 100")
+dso.write(":DISPlay:WBRightness 100")
+time.sleep(1)
+
 # loop to test as many times as the user has asked for
 while i <= numberOfTests:
     # clear, set trigger to auto, and run the scope
