@@ -9,6 +9,9 @@ You must test them thoroughly first and be sure they work fairly well.
 Generally, make sure that you do not hard-code any VISA resources, and use the visares.py file.
 Also, do not hard-code a lot of values that may change. Prefer asking the user with an input().
 
+**In order to keep this fairly lightweight, try to use the libraries that this already depends on.
+If you must use another library, add it to requirements.txt**
+
 ### Instrument Support
 **You are also limited to the following instruments that are supported by psytestbench library:**
 

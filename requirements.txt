@@ -1,0 +1,3 @@
+numpy
+matplotlib
+# you also need the psytestbench lib from here (install the whl file manually with `pip install [file]`) https://github.com/psychogenic/psytestbench/
