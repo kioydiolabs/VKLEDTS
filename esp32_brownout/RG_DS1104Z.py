@@ -66,7 +66,7 @@ except Exception as e:
     raise e
 
 # loop to test as many times as the user has asked for
-while i >= numberOfTests:
+while i <= numberOfTests:
     # clear, set trigger to auto, and run the scope
     dso.clear()
     dso.trigger.auto()
